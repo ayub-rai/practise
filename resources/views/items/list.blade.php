@@ -8,6 +8,7 @@
   </head>
   <body>
    .<div class="container">
+    <a href="/" class="btn btn-danger">Back</a>
     <table class="table">
         <tr>
             <th>Sno</th>
@@ -21,6 +22,7 @@
                 <td>{{ $item->id }}</td>
                 <td>{{ $item->name }}</td>
                 <td>{{ $item->price }}</td>
+                <td><a href="/item/{{ $item->id }}/edit" class="badge bg-success text-decoration-none">Edit</a></td>
             </tr>
         @endforeach
     </table>
