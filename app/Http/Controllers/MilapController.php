@@ -62,7 +62,8 @@ class MilapController extends Controller
      */
     public function edit($id)
     {
-        //
+        $items = Milap::find($id);
+        return view('items.edit', compact('items'));
     }
 
     /**

@@ -21,3 +21,5 @@ Route::get('/', function () {
 Route::post('/item',[MilapController::class,'store']);
 
 Route::get('/list',[MilapController::class,'show']);
+
+Route::get('/item/{{ $item->id }}/edit',[MilapController::class,'edit']);
